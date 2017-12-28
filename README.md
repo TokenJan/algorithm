@@ -1,6 +1,6 @@
 # interview preparation list
 ## Sort
-- [ ] Insertion sort
+- [x] Insertion sort
 - [ ] Selection sort
 - [ ] Heap sort
 - [ ] Quick sort
