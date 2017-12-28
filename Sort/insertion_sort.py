@@ -1,7 +1,4 @@
-import numpy as np
-import time
-
-def insertion_sort(arr):
+def sort(arr):
     res = []
     if len(arr) != 0:
         res.append(arr[0])
@@ -13,18 +10,3 @@ def insertion_sort(arr):
                 elif j == i-1:
                     res.append(arr[i])
     return res
-    
-if __name__ == '__main__':
-    # generate data
-    np.random.seed(233)
-    array = np.random.randint(10000, size=10000)
-    
-    # calculate execution time
-    prev_time = time.time()
-    sorted_array = insertion_sort(array)
-    exec_time = time.time() - prev_time
-    
-    # assertion
-    assert(sorted_array == [sorted(array)])
-    print(exec_time)
-    
